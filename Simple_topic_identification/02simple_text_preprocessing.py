@@ -31,7 +31,6 @@ text = "The cat is in 33 the box. The $ cat likes the box. The box is over the c
 # create tokens from the above text only the aplhabets not numbers and special characters
 tokens = [word for word in word_tokenize(text.lower()) if word.isalpha()]
 print(tokens)
-
 # remove all the stop words in tokens list
 remove_stop_words = [stop for stop in tokens if stop not in stopwords.words('english')]
 print(remove_stop_words)
